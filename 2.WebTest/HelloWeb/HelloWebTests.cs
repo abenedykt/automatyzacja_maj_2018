@@ -26,6 +26,18 @@ namespace HelloWeb
             Assert.Equal("Witamy na warsztatach automatyzacji testów!", header.Text);
         }
 
+
+        [Fact]
+        public void Can_open_blog_and_hello_note_exists_hard_way()
+        {
+            browser.Navigate().GoToUrl(BlogUrl);
+
+            var cssSelector = "#post-3096 > header > h1";
+
+            var title = browser.FindElement(By.CssSelector(cssSelector));
+
+            Assert.Equal("Witamy na warsztatach automatyzacji testów!", title.Text);
+        }
         public void Dispose()
         {
             try
