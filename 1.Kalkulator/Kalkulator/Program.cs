@@ -32,5 +32,32 @@ namespace Kalkulator
         {
             return x + y;
         }
+
+        public int Subtract(int x, int y)
+        {
+            return x - y;
+        }
+
+        public int Multiple(int x, int y)
+        {
+            return x * y;
+        }
+
+        public int Divide(int x, int y)
+        {
+            return x / y;
+        }
+
+
+
+
+
+        // subtract
+
+        // divide
+
+        // multiple
+
+        //  + TESTY :D
     }
 }
