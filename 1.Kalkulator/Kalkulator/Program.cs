@@ -24,10 +24,6 @@ namespace Kalkulator
 
     public class ExampleCalculator
     {
-        public ExampleCalculator()
-        {
-        }
-
         public int Add(int x, int y)
         {
             return x + y;
@@ -43,21 +39,9 @@ namespace Kalkulator
             return x * y;
         }
 
-        public int Divide(int x, int y)
+        public double Divide(double x, double y)
         {
             return x / y;
         }
-
-
-
-
-
-        // subtract
-
-        // divide
-
-        // multiple
-
-        //  + TESTY :D
     }
 }

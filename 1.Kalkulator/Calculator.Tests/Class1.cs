@@ -69,5 +69,26 @@ namespace Calculator.Tests
             // assert
             Assert.Equal(10, result);
         }
+
+        [Theory,
+            InlineData(1.5,2,0.75),
+            InlineData(2,1.5, 1.3333333333333333),
+            InlineData(20,2,10),
+            InlineData(19,2,9.5),
+            InlineData(19,0,double.PositiveInfinity),
+            InlineData(-19,0,double.NegativeInfinity),
+            InlineData(0,0,double.NaN),
+            ]
+        public void Dividing_two_positive_integers_parametrized(double x, double y, double expected_result)
+        {
+            // arrange
+            var calc = new ExampleCalculator();
+
+            // act
+            var result = calc.Divide(x, y);
+
+            // assert
+            Assert.Equal(expected_result, result);
+        }
     }
 }
