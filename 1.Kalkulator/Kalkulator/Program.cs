@@ -22,13 +22,13 @@ namespace Kalkulator
         }
     }
 
-    internal class ExampleCalculator
+    public class ExampleCalculator
     {
         public ExampleCalculator()
         {
         }
 
-        internal int Add(int x, int y)
+        public int Add(int x, int y)
         {
             return x + y;
         }
