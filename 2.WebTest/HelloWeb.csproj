@@ -63,7 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExampleComment.cs" />
     <Compile Include="HelloWebTests.cs" />
+    <Compile Include="HelloWebWithPageObjectTests.cs" />
+    <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
