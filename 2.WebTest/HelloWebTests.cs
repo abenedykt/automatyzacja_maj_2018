@@ -15,6 +15,10 @@ namespace HelloWeb
         public HelloWebTests()
         {
             browser = new ChromeDriver();
+
+            browser.Manage().Window.Maximize();
+            browser.Manage().Timeouts()
+                .ImplicitWait = TimeSpan.FromMilliseconds(100);
         }
 
         [Fact]
@@ -65,7 +69,7 @@ namespace HelloWeb
 
             var submit = browser.FindElement(By.Id("comment-submit"));
             submit.Click();
-            
+
             // assert
             var comments = browser.FindElements(By.ClassName("comment-content"));
 
