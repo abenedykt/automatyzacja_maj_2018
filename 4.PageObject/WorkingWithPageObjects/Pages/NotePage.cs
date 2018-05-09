@@ -5,6 +5,9 @@ namespace WorkingWithPageObjects.Pages
 {
     internal class NotePage
     {
+        private const string ClassNameForTitle = "entry-title";
+        private const string ClassNameForContent = "entry-content";
+
         private IWebDriver _driver;
 
         public NotePage(IWebDriver driver, string noteUrl)
@@ -15,11 +18,22 @@ namespace WorkingWithPageObjects.Pages
 
         public bool Is(Note expected)
         {
-            var title = _driver.FindElement(By.ClassName("entry-title"));
-            var content = _driver.FindElement(By.ClassName("entry-content"));
-            content = content.FindElement(By.TagName("p"));
+            string title = GetTitle();
+            string content = GetContent();
 
-            return title.Text == expected.Title && content.Text == expected.Text;
+            return title == expected.Title && content == expected.Text;
+        }
+
+        private string GetContent()
+        {
+            var content = _driver.FindElement(By.ClassName(ClassNameForContent));
+            content = content.FindElement(By.TagName("p"));
+            return content.Text;
+        }
+
+        private string GetTitle()
+        {
+            return _driver.FindElement(By.ClassName(ClassNameForTitle)).Text;
         }
     }
 }

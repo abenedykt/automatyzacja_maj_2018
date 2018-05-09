@@ -13,6 +13,7 @@ namespace WorkingWithPageObjects.Pages
         private const string AddNewButtonText = "Add New";
         private const string IdForAccountBar = "wp-admin-bar-my-account";
         private const string ClassNameForSignOutButton = "ab-sign-out";
+
         private IWebDriver _driver;
 
         public AdminPage(IWebDriver driver)
@@ -26,6 +27,12 @@ namespace WorkingWithPageObjects.Pages
             ClickNewPost();
 
             return new NewNotePage(_driver);
+        }
+
+        public void Logout()
+        {
+            OpenAccountSideMenu();
+            ClickSignOut();
         }
 
         private void ClickNewPost()
@@ -43,11 +50,7 @@ namespace WorkingWithPageObjects.Pages
             post.Click();
         }
 
-        public void Logout()
-        {
-            OpenAccountSideMenu();
-            ClickSignOut();
-        }
+       
 
         private void ClickSignOut()
         {
