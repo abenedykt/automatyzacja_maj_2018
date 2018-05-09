@@ -2,7 +2,7 @@
 
 namespace HelloWeb
 {
-    internal class ExampleComment
+    public class ExampleComment
     {
         public string Name { get; }
         public string Email { get; }
