@@ -14,7 +14,6 @@ namespace HelloWeb
         public HelloWebWithPageObjectTests()
         {
             driver = new ChromeDriver();
-
             driver.Manage().Window.Maximize();
             testComment = new ExampleComment();
         }
