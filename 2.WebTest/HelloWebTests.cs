@@ -8,7 +8,8 @@ namespace HelloWeb
 {
     public class HelloWebTests : IDisposable
     {
-        private readonly string BlogUrl = "https://autotestdotnet.wordpress.com/";
+        private const string BlogUrl = "https://autotestdotnet.wordpress.com/";
+        private const string UrlToHelloNote = "https://autotestdotnet.wordpress.com/2018/05/07/witamy-na-warsztatach-automatyzacji-testow";
         private IWebDriver browser;
 
         public HelloWebTests()
@@ -46,7 +47,7 @@ namespace HelloWeb
         public void Can_add_comment_to_existing_note()
         {
             // arrange
-            browser.Navigate().GoToUrl("https://autotestdotnet.wordpress.com/2018/05/07/witamy-na-warsztatach-automatyzacji-testow");
+            browser.Navigate().GoToUrl(UrlToHelloNote);
             var textGuid = Guid.NewGuid().ToString();
             var note = "lorem ipsum dolor sit amet, abc " + textGuid;
             var userName = "j.kowalski";
