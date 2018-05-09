@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 using System;
 using System.Linq;
 using Xunit;
@@ -17,8 +19,8 @@ namespace HelloWeb
             browser = new ChromeDriver();
 
             browser.Manage().Window.Maximize();
-            browser.Manage().Timeouts()
-                .ImplicitWait = TimeSpan.FromMilliseconds(100);
+            //browser.Manage().Timeouts()
+            //    .ImplicitWait = TimeSpan.FromMilliseconds(100);
         }
 
         [Fact]
@@ -64,10 +66,14 @@ namespace HelloWeb
             var emailElement = browser.FindElement(By.Id("email"));
             emailElement.SendKeys(userEmail);
 
-            var userElement = browser.FindElement(By.Id("author"));
+            var authorSelector = By.Id("author");
+            WaitForClickable(authorSelector, 10);
+            var userElement = browser.FindElement(authorSelector);
             userElement.SendKeys(userName);
 
             var submit = browser.FindElement(By.Id("comment-submit"));
+            WaitForClickable(submit, 10);
+
             submit.Click();
 
             // assert
@@ -76,6 +82,18 @@ namespace HelloWeb
             var myComment = comments.SingleOrDefault(c => c.Text.Contains(textGuid));
 
             Assert.NotNull(myComment);
+        }
+
+        private void WaitForClickable(By by, int seconds)
+        {
+            var wait = new WebDriverWait(browser, TimeSpan.FromSeconds(seconds));
+            wait.Until(ExpectedConditions.ElementToBeClickable(by));
+        }
+
+        private void WaitForClickable(IWebElement element, int seconds)
+        {
+            var wait = new WebDriverWait(browser, TimeSpan.FromSeconds(seconds));
+            wait.Until(ExpectedConditions.ElementToBeClickable(element));
         }
 
         private string GenerateEmail()
