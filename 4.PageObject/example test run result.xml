@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies timestamp="05/10/2018 15:30:04">
+  <assembly name="c:\Szkolenia\automatyzacja_maj_2018\4.PageObject\WorkingWithPageObjects\bin\Debug\WorkingWithPageObjects.DLL" environment="64-bit .NET 4.0.30319.42000 [collection-per-class, parallel (unlimited threads)]" test-framework="xUnit.net 2.3.1.3858" run-date="2018-05-10" run-time="15:27:27" config-file="C:\Szkolenia\automatyzacja_maj_2018\4.PageObject\WorkingWithPageObjects\packages\xunit.runner.console.2.3.1\tools\net452\xunit.console.exe.Config" total="32" passed="32" failed="0" skipped="0" time="157.295" errors="0">
+    <errors />
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for WorkingWithPageObjects.FactoryExample" time="8.977">
+      <test name="WorkingWithPageObjects.FactoryExample.Example" type="WorkingWithPageObjects.FactoryExample" method="Example" time="8.9771328" result="Pass" />
+    </collection>
+    <collection total="27" passed="27" failed="0" skipped="0" name="Test collection for WorkingWithPageObjects.TestWithDataProvider" time="157.112">
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google(term: \&quot;code sprinters\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google" time="13.2360982" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google(term: \&quot;agile szkolenia\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google" time="9.8611614" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google(term: \&quot;kausza\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google" time="8.3976182" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google(term: \&quot;fortepian\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google" time="10.3381107" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google(term: \&quot;pytania z matury\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google" time="5.9909802" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google(term: \&quot;kabza\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google" time="5.0279503" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;zyrafa\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="5.2329908" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;slon\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.9620317" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;kon\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.7368223" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;krowa\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.9819783" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;kaczka\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="5.1285296" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;pies\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.8299692" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;kot\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.9579873" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;fortepian\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="5.0396981" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;tuba\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="5.0944053" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;klarnet\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.7882312" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;ksylofon\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.8066091" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;perkusja\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="5.3797938" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;flet\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.7580182" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;gitara\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="5.1850557" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;banjo\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="5.1724413" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;wiolonczela\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.9476198" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;sprzypce\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.832916" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;skżypce\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.9629371" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;skczypce\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.931429" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;krzypce\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.8141867" result="Pass" />
+      <test name="WorkingWithPageObjects.TestWithDataProvider.I_can_google_from_file(term: \&quot;kszypcze\&quot;)" type="WorkingWithPageObjects.TestWithDataProvider" method="I_can_google_from_file" time="4.716871" result="Pass" />
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for WorkingWithPageObjects.GooglePageFactoryExample" time="41.199">
+      <test name="WorkingWithPageObjects.GooglePageFactoryExample.Can_search_term_in_google(query: \&quot;code sprinters\&quot;, expected: \&quot;Code Sprinters - Agile Experts\&quot;)" type="WorkingWithPageObjects.GooglePageFactoryExample" method="Can_search_term_in_google" time="15.0395552" result="Pass" />
+      <test name="WorkingWithPageObjects.GooglePageFactoryExample.Can_search_term_in_google(query: \&quot;microsoft\&quot;, expected: \&quot;Microsoft — oficjalna strona główna\&quot;)" type="WorkingWithPageObjects.GooglePageFactoryExample" method="Can_search_term_in_google" time="12.703407" result="Pass" />
+      <test name="WorkingWithPageObjects.GooglePageFactoryExample.Can_search_term_in_google(query: \&quot;krowa\&quot;, expected: \&quot;Krowa z Janowa\&quot;)" type="WorkingWithPageObjects.GooglePageFactoryExample" method="Can_search_term_in_google" time="13.4560822" result="Pass" />
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for WorkingWithPageObjects.WordpressTests" time="46.331">
+      <test name="WorkingWithPageObjects.WordpressTests.Can_create_new_note" type="WorkingWithPageObjects.WordpressTests" method="Can_create_new_note" time="46.3306133" result="Pass" />
+    </collection>
+  </assembly>
+</assemblies>
