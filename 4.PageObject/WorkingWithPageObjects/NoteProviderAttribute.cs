@@ -50,6 +50,8 @@ namespace WorkingWithPageObjects
         }
     }
 
+
+
     internal class GoogleAttribute : DataAttribute
     {
         private readonly string query;
@@ -64,6 +66,11 @@ namespace WorkingWithPageObjects
             yield return new[] { query };
         }
     }
+
+
+
+
+
 
     internal class GoogleFromFileAttribute : DataAttribute
     {
