@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="FactoryExample.cs" />
     <Compile Include="GooglePageFactoryExample.cs" />
+    <Compile Include="GridTests.cs" />
     <Compile Include="NoteProviderAttribute.cs" />
     <Compile Include="Pages\NotePage.cs" />
     <Compile Include="Pages\AdminLoginPage.cs" />

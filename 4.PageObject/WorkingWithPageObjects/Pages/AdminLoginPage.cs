@@ -55,5 +55,7 @@ namespace WorkingWithPageObjects.Pages
             var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(seconds));
             wait.Until(ExpectedConditions.ElementToBeClickable(by));
         }
+
+
     }
 }
