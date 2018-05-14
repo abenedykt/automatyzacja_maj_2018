@@ -67,15 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\NotePage.cs" />
+    <Compile Include="Domain\Note.cs" />
+    <Compile Include="Domain\User.cs" />
     <Compile Include="Pages\AdminLoginPage.cs" />
     <Compile Include="Pages\AdminPage.cs" />
-    <Compile Include="WordpressTests.cs" />
-    <Compile Include="Domain\Note.cs" />
     <Compile Include="Pages\NewNotePage.cs" />
+    <Compile Include="Pages\NotePage.cs" />
+    <Compile Include="WordpressTests.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Domain\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
