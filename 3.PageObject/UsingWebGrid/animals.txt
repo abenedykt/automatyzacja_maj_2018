@@ -1,0 +1,14 @@
+﻿fortepian
+tuba
+klarnet
+ksylofon
+perkusja
+flet
+gitara
+banjo
+wiolonczela
+sprzypce
+skżypce
+skczypce
+krzypce
+kszypcze

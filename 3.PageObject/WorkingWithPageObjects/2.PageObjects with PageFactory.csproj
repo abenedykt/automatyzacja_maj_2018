@@ -67,10 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FactoryExample.cs" />
-    <Compile Include="GooglePageFactoryExample.cs" />
-    <Compile Include="GridTests.cs" />
-    <Compile Include="NoteProviderAttribute.cs" />
     <Compile Include="Pages\NotePage.cs" />
     <Compile Include="Pages\AdminLoginPage.cs" />
     <Compile Include="Pages\AdminPage.cs" />
@@ -86,14 +82,6 @@
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="animals.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="instruments.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

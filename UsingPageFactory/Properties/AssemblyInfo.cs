@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LinqExamples")]
+[assembly: AssemblyTitle("UsingPageFactory")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LinqExamples")]
+[assembly: AssemblyProduct("UsingPageFactory")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a04c7b78-30f9-4ec4-94c0-8260224f1b74")]
+[assembly: Guid("f044c6d3-dee2-4acb-9b64-27959c9fccfb")]
 
 // Version information for an assembly consists of the following four values:
 //

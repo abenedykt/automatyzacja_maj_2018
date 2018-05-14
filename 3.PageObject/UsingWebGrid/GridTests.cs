@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Html5;
 using OpenQA.Selenium.Remote;
 using System;
@@ -13,13 +12,12 @@ namespace WorkingWithPageObjects
 
         public GridTests()
         {
-            //var cap = new DesiredCapabilities();
-            //cap.SetCapability(CapabilityType.BrowserName, "firefox");
-            //cap.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Windows));
+            var cap = new DesiredCapabilities();
+            cap.SetCapability(CapabilityType.BrowserName, "firefox");
+            cap.SetCapability(CapabilityType.Platform, new Platform(PlatformType.Windows));
 
-            //_driver = new RemoteWebDriver(new Uri("http://172.16.240.247:6543/wd/hub"), cap);
+            _driver = new RemoteWebDriver(new Uri("http://127.0.0.1:6543/wd/hub"), cap);
 
-            _driver = new ChromeDriver();
         }
 
         public void Dispose()
@@ -37,15 +35,6 @@ namespace WorkingWithPageObjects
         public void I_can_google(string term)
         {
             _driver.Navigate().GoToUrl("https://www.google.com/");
-
-
-            // example of reading web storage
-            var webstorage = _driver as IHasWebStorage;
-            if (webstorage != null)
-            {
-                webstorage.WebStorage.LocalStorage.GetItem("abc");
-            }
-
             var queryBox = _driver.FindElement(By.Id("lst-ib"));
             queryBox.SendKeys(term + Keys.Return);
         }
