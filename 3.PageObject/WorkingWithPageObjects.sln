@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.PageObjects with Staics", "1.PageObjects with Statics\1.PageObjects with Staics.csproj", "{BC30DA76-E172-489A-B7F7-62658B87CADE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.PageObjects with PageFactory", "2.WorkingWithPageObjects\2.PageObjects with PageFactory.csproj", "{BB0852BC-FD1C-46C0-9345-FE39B88A72F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.PageObjects with Objects", "2.WorkingWithPageObjects\2.PageObjects with Objects.csproj", "{BB0852BC-FD1C-46C0-9345-FE39B88A72F2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. CustomDataProviders", "3.CustomDataProviders\3. CustomDataProviders.csproj", "{7AF94644-0F3B-4713-98BD-243D49BFA4A7}"
 EndProject
